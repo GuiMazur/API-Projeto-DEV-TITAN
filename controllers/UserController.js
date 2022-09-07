@@ -16,8 +16,8 @@ module.exports = {
                 lastname: req.body.lastname,
                 password: bcrypt.hashSync(req.body.password, salt),
                 email: req.body.email,
-                cep: req.body.cep,
-                cpf: req.body.cpf,
+                cep: req.body.cep.replace('.', '').replace('-', ''),
+                cpf: req.body.cpf.replace('.', '').replace('-', ''),
                 admin: req.body.admin,
                 cart: []
             }
