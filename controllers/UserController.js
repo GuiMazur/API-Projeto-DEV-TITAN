@@ -9,6 +9,7 @@ module.exports = {
         try{
             const salt = bcrypt.genSaltSync(10)
             const dbList = JSON.parse(fs.readFileSync('databases/users.json'))
+            if (dbList.find(o => o.email == req.body.email)) throw 'this email is already registered'
             const newjson = {
                 id: dbList.length > 0 ? dbList[dbList.length - 1]["id"] + 1 : 1,
                 name: req.body.name,
@@ -22,7 +23,7 @@ module.exports = {
             }
             dbList.push(newjson)
             fs.writeFileSync('databases/users.json', JSON.stringify(dbList))
-            res.status(200).send('Conta cadastrada com sucesso')
+            res.status(200).send(newjson)
         }catch(e){res.status(500).send(`Error, account not created: ${e}`)}
     },
 
