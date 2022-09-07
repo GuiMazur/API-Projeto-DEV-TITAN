@@ -10,8 +10,8 @@ app.use((req, res, next) => {
   next();
 });
 
-app.route('/user/register').post(UserController.Store)
+app.route('/users/register').post(UserController.Store)
 
-app.route('/user/login').post(UserController.Login)
+app.route('/users/login').post(UserController.Login)
 
 app.listen(8000, console.log('Ouvindo'))
