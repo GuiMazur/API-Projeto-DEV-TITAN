@@ -29,7 +29,9 @@ app.route('/users/login').post(UserController.Login)
 
 app.route('/products/register').post(ProductController.Store)
 
-app.route('/products').get(ProductController.Login)
+app.route('/products').get(ProductController.Index)
+
+app.route('/products/:id').get(ProductController.Show)
 
 // END ROUTES
 

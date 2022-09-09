@@ -18,6 +18,23 @@ module.exports = {
             dbList.push(newjson)
             fs.writeFileSync('databases/products.json', JSON.stringify(dbList))
             res.status(200).send('Produto cadastrado com sucesso')
-        }catch(e){res.status(500).send(`Erro, produto não criado: ${e}`)}
+        } catch(e){res.status(500).send(`Erro, produto não criado: ${e}`)}
     },
+
+    Index: (req, res) => {
+        try{
+            const dbList = JSON.parse(fs.readFileSync('databases/products.json'))
+            res.status(200).send(dbList)
+        } catch(e){res.status(500).send(`Erro: ${e}`)}
+    },
+
+    Show: (req, res) => {
+        try{
+            const dbList = JSON.parse(fs.readFileSync('databases/products.json'))
+            const product = dbList.find(o => o.id == req.params.id)
+            if (product) {
+                res.status(200).send(product)
+            } else throw 'Produto não encontrado'
+        } catch(e){res.status(500).send(`Erro: ${e}`)}
+    }
 }
