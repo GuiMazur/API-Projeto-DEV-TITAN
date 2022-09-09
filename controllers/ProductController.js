@@ -35,6 +35,37 @@ module.exports = {
             if (product) {
                 res.status(200).send(product)
             } else throw 'Produto não encontrado'
-        } catch(e){res.status(500).send(`Erro: ${e}`)}
+        } catch(e) {res.status(500).send(`Erro: ${e}`)}
+    },
+
+    Update: (req, res) => {
+        try{
+            const dbList = JSON.parse(fs.readFileSync('databases/products.json'))
+            const idx = dbList.findIndex(o => o.id == req.params.id)
+            if (idx > -1) {
+                dbList[idx] = {
+                    ...dbList[idx],
+                    name: req.body.name,
+                    image: req.body.image,
+                    description: req.body.description,
+                    stock: req.body.stock,
+                    price: req.body.price
+                }
+                fs.writeFileSync('databases/products.json', JSON.stringify(dbList))
+                res.status(200).send('Produto alterado com sucesso')
+            } else throw 'Produto não encontrado'
+        } catch(e) {res.status(500).send(`Erro: ${e}`)}
+    },
+
+    Delete: (req, res) => {
+        try{
+            const dbList = JSON.parse(fs.readFileSync('databases/products.json'))
+            const idx = dbList.findIndex(o => o.id == req.params.id)
+            if (idx > -1) {
+                dbList.splice(idx, 1)
+                fs.writeFileSync('databases/products.json', JSON.stringify(dbList))
+                res.status(200).send('Produto deletado com sucesso')
+            } else throw 'Produto não encontrado'
+        } catch(e) {res.status(500).send(`Erro: ${e}`)}
     }
 }
