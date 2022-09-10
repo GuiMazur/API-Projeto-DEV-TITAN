@@ -72,8 +72,6 @@ module.exports = {
             var semEstoque = 0
 
             for (var i of user.cart){
-                console.log(user.cart);
-                console.log(i);
                 const productIdx = productList.findIndex(p => p.id == i.id)
                 if (productIdx == -1) {continue}
                 const product = productList[productIdx]
