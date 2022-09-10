@@ -1,7 +1,5 @@
 const fs = require('fs')
 
-// { id: 1, quantity: 5}
-
 module.exports = {
     Store: (req, res) => {
         try{
