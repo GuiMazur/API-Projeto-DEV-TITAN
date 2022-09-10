@@ -61,5 +61,36 @@ module.exports = {
                 res.status(200).send(cart)
             } else throw 'Produto não encontrado'
         } catch(e) {res.status(500).send(`Erro: ${e}`)}
+    },
+
+    Buy: (req, res) => {
+        try{
+            const productList = JSON.parse(fs.readFileSync('databases/products.json'))
+            const userList = JSON.parse(fs.readFileSync('databases/users.json'))
+            const userIdx = userList.findIndex(o => o.id == req.params.id)
+            const user = userList[userIdx]
+            var semEstoque = 0
+
+            for (var i of user.cart){
+                console.log(user.cart);
+                console.log(i);
+                const productIdx = productList.findIndex(p => p.id == i.id)
+                if (productIdx == -1) {continue}
+                const product = productList[productIdx]
+                if (product.stock < i.quantity) {
+                    productList[productIdx] = {...product, stock: 0}
+                    semEstoque += 1
+                }
+                else {productList[productIdx] = {...product, stock: product.stock - i.quantity}}
+            }
+
+            user.cart = []
+
+            userList[userIdx] = user
+
+            fs.writeFileSync('databases/users.json', JSON.stringify(userList))
+            fs.writeFileSync('databases/products.json', JSON.stringify(productList))
+            res.status(200).send(!semEstoque ? 'Parabéns, sua compra foi efetuada com sucesso' : `Sua compra foi efetuada, porém ${semEstoque} de seus produtos possuía menos estoque do que desejado. A quantidade disponível foi comprada.`)            
+        } catch(e) {res.status(500).send(`Erro: ${e}`)}
     }
 }

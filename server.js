@@ -37,6 +37,8 @@ app.use((req, res, next) => {
 
   app.route('/cart/register/:id').post(CartController.Store)
   
+  app.route('/cart/buy/:id').patch(CartController.Buy)
+
   app.route('/cart/delete/:user_id/:product_id').delete(CartController.Delete)
 
   app.route('/cart/:id').get(CartController.Index)
