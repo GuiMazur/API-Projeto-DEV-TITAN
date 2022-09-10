@@ -43,6 +43,7 @@ module.exports = {
 
     Delete: (req, res) => {
         try{
+            const productList = JSON.parse(fs.readFileSync('databases/products.json'))
             const userList = JSON.parse(fs.readFileSync('databases/users.json'))
             const userIdx = userList.findIndex(o => o.id == req.params.user_id)
             const user = userList[userIdx]
@@ -51,7 +52,13 @@ module.exports = {
                 user.cart.splice(productIdx, 1)
                 userList[userIdx] = user            
                 fs.writeFileSync('databases/users.json', JSON.stringify(userList))
-                res.status(200).send(user.cart)
+
+                cart = user.cart.map((productInCart) => {
+                    product = productList.find(product => product.id == productInCart.id)
+                    return {...product, quantity: productInCart.quantity}
+                })
+
+                res.status(200).send(cart)
             } else throw 'Produto não encontrado'
         } catch(e) {res.status(500).send(`Erro: ${e}`)}
     }
