@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Guilherme",
+        "lastname": "Mazur",
+        "password": "$2a$10$WRvdjDTU89rIzN8le7O9z.zrQ6tQ1GT7EdhA6SoARog/MoRwuopGa",
+        "email": "mazur@ufba.br",
+        "cep": "40260475",
+        "cpf": "12345678900",
+        "admin": false,
+        "cart": []
+    },
+    {
+        "id": 2,
+        "name": "Alisson",
+        "lastname": "Matias",
+        "password": "$2a$10$lTu1JY3N7YzldJNIYZrABOOAljnA6SxArgp87WHsu5GLmW7qEqcLe",
+        "email": "matias@ufba.br",
+        "cep": "40250020",
+        "cpf": "12345678900",
+        "admin": true,
+        "cart": []
+    },
+    {
+        "id": 3,
+        "name": "Guilherme",
+        "lastname": "Ramos",
+        "password": "$2a$10$wuZB7HXeTBUhpf7cW1LyReDcAqdZxwhy22Bh8.8jM8hM1j7ZS4JJq",
+        "email": "ramos@ufba.br",
+        "cep": "40250020",
+        "cpf": "12345678900",
+        "admin": true,
+        "cart": []
+    }
+]

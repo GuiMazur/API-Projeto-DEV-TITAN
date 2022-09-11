@@ -1,0 +1,114 @@
+[
+    {
+        "id": 1,
+        "name": "Nimesulida 100mg Genérico",
+        "image": "https://araujo.vteximg.com.br/arquivos/ids/4163208-1000-1000/07896004704036.jpg?v=637838893285870000",
+        "description": "Este medicamento é destinado para o tratamento de uma variedade de condições que requeiram atividade antiinflamatória (contra a inflamação), analgésica (contra a dor) e antipirética (contra a febre).",
+        "stock": 37,
+        "price": 8.99
+    },
+    {
+        "id": 2,
+        "name": "Dipirona Monoidratada 1000mg",
+        "image": "https://www.drogariaminasbrasil.com.br/media/product/9e6/dipirona-monoidratada-1g-com-10-comprimidos-generico-prati-donaduzzi-ed2.jpg",
+        "description": "A Dipirona Sódica 1000mg Genérico Prati é um medicamento indicado para aliviar os sintomas nos quadros de dores ou febre. Sua ação analgésica e antitérmica, diminuindo a dor e a febre, começa a fazer efeito de 30 a 60 minutos após o uso. A embalagem contém 10 comprimidos.",
+        "stock": 15,
+        "price": 4.99
+    },
+    {
+        "id": 3,
+        "name": "Ritalina 10mg",
+        "image": "https://d1xdssnpeez8k0.cloudfront.net/Custom/Content/Products/30/53/3053_ritalina-10mg-caixa-com-60-comprimidos-p7896261017306_l1_637217814109237554.jpg",
+        "description": "Metilfenidato, vendido sob os nomes comerciais Ritalina e Concerta, entre outros, é um fármaco estimulante leve do sistema nervoso central, estruturalmente relacionado com as anfetaminas, das classes feniletilaminas e piperidinas.",
+        "stock": 1,
+        "price": 49.9
+    },
+    {
+        "id": 4,
+        "name": "Tylenol 750mg",
+        "image": "https://www.qualidoc.com.br/ccstore/v1/images/?source=/file/v3056258188610746010/products/1006495.Tylenol-750mg-4-Comprimidos-Revestidos.jpg&height=800&width=800",
+        "description": "Este medicamento é indicado em adultos para a redução da febre e para o alívio temporário de dores leves a moderadas, tais como: dores associadas a resfriados comuns, dor de cabeça, dor no corpo, dor de dente, dor nas costas, dores musculares, dores leves associadas a artrites e cólicas menstruais.",
+        "stock": 54,
+        "price": 7.3
+    },
+    {
+        "id": 5,
+        "name": "Deca Testona Evolution High Performance",
+        "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRvJisLh8riJF3au2Sk4IB4-wyd69h7EknwLz4RRky2NQFH9dqelZYujoTETqMzoL7Wb1kzK_IYlahFLioIGXzdriLfkFabRP5FIJ31Ul6Snynd_6UaKvR0-Q",
+        "description": "A deca testona é um super suplemento de vitaminas e minerais 100% seguro, ideal para atletas, praticante de musculação e atividades físicas de alto esforço. O novo deca testona evolution é fabricado em portugal e atende as mais exigentes normas sanitárias europeias.",
+        "stock": 28,
+        "price": 125.9
+    },
+    {
+        "id": 6,
+        "name": "Dramin B6 50mg",
+        "image": "https://cdn.awsli.com.br/1262/1262151/produto/151000369/8ded178435.jpg",
+        "description": "Dramin B6 é indicado para prevenir e tratar os sintomas de enjoo, tontura e vômitos em geral, incluindo os vômitos e enjoos da gravidez, no pré e pós-operatórios e após tratamento com radioterapia; na prevenção e tratamento de enjoos e vômitos causados por movimentos durante as viagens. quadro conhecido como cinetose.",
+        "stock": 4,
+        "price": 22.9
+    },
+    {
+        "id": 7,
+        "name": "Desodorante Dove Original",
+        "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRt2iKNarmhR4mCjdY4nUNGKK4kxQBPI3JkfWEUDBz-4K2bIKL8N3-PojAXYXRuoJ4dngjpDkNwndttMRGXuN2N8D0txocdgDJZHvxbLrU&usqp=CAE",
+        "description": "Para proteção eficaz e o melhor cuidado. Hidrata e ajuda a pele a se recuperar da irritação causada pela depilação. Formulado com de creme hidratante e enriquecido com óleo protetor, ajuda a manter a hidratação da pele das axilas",
+        "stock": 0,
+        "price": 14.9
+    },
+    {
+        "id": 8,
+        "name": "Universal Nutrition GH Max",
+        "image": "https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/unn/unn01432/v/23.jpg",
+        "description": "O hormônio do crescimento (GH) adiciona massa magra ao estimular a síntese de proteínas e aumentar a retenção de nitrogênio nos músculos. GH Max™ da Universal Nutrition é a fórmula definitiva para auxílio ao GH. O produto é projetado para atletas de elite que treinam força e estão interessados em otimizar a potência.",
+        "stock": 31,
+        "price": 190.99
+    },
+    {
+        "id": 9,
+        "name": "Leite em Pó Integral 400g",
+        "image": "https://cf.shopee.com.br/file/e541cf919a729baf2b9c7766ab9d77c9",
+        "description": "Rico em vitaminas e minerais essenciais, o leite em pó Ninho Forti+ Integral é feito para ajudar no desenvolvimento do seu filhote! O produto é muito utilizado como um “leite de transição”, pois quando a criança está deixando de mamar no peito, pode começar a usufruir de seus benefícios. Conta com abundância de ferro, zinco e vitaminas A, C e D.",
+        "stock": 36,
+        "price": 22.5
+    },
+    {
+        "id": 10,
+        "name": "Camisinha Prudence Lubrificada",
+        "image": "https://img.drogasil.com.br/media/catalog/product/c/a/camisinha-prudence-lubrificado-12-unidades.jpg",
+        "description": "Prudence Clássico é a camisinha masculina feita para aumentar o prazer durante a relação. Feita em material resistente, mais fino que os demais preservativos do mercado, é triplamente testada para proporcionar alta segurança para um sexo prazeroso. E o melhor: não tem cheiro de borracha.",
+        "stock": 9,
+        "price": 8.35
+    },
+    {
+        "id": 11,
+        "name": "Decongex Plus Xarope 120ml",
+        "image": "https://www.drogariaveracruz.com.br/media/catalog/product/cache/103558653b27620146866a2bedb6fa96/D/e/Decongex_Plus_Xarope_120ml.webp",
+        "description": "Decongex Plus Xarope é indicado para o alívio sintomático de quadros clínicos relacionados a afecções das vias aéreas superiores e das manifestações alérgicas do sistema respiratório, tais como: coriza, rinite alérgica, prurido nasal, congestão nasal e alergia.",
+        "stock": 2,
+        "price": 17.65
+    },
+    {
+        "id": 12,
+        "name": "Suplemento Vitamínico Centrum",
+        "image": "https://io.convertiez.com.br/m/drogal/shop/products/images/72176/medium/suplemento-vitaminico-centrum-de-a-a-zinco-60-comprimidos_59501.jpg",
+        "description": "Centrum Adulto é um Suplemento alimentar de vitaminas e minerais de A a Zinco. Contém na sua formulação Antioxidantes como Vitaminas C e E e Zinco, Vitamina D3 e Complexo B.",
+        "stock": 8,
+        "price": 99.9
+    },
+    {
+        "id": 13,
+        "name": "Polaramine 6mg",
+        "image": "https://drogariasp.vteximg.com.br/arquivos/ids/471713-1000-1000/12955---polaramine-6mg-12-repetabs-1.jpg?v=637660355241170000",
+        "description": "Ótimo para lidar com problemas alérgicos e dá um soninho gostoso...",
+        "stock": 50,
+        "price": 12
+    },
+    {
+        "id": 15,
+        "name": "Teste",
+        "image": "https://drogariasp.vteximg.com.br/arquivos/ids/578399-1000-1000/67563---dipirona-sodica-500mg-generico-ems-10-comprimidos-1.jpg?v=637835640889800000",
+        "description": "testando",
+        "stock": 50,
+        "price": 5.2
+    }
+]
